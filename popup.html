@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212;
+      background-color: #1e1e1e;
       color: #e0e0e0;
       padding: 20px;
       margin: 0;
@@ -37,10 +37,16 @@
     }
 
     p {
-      background-color: #1e1e1e;
+      background-color: #292929;
       padding: 10px;
       border-radius: 5px;
       word-break: break-all;
+    }
+
+    #copiedMessage {
+      color: #03DAC6;
+      display: none;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -50,6 +56,7 @@
   <input type="number" id="numero" placeholder="Digite o número usado" />
   <button id="descriptografar">Descriptografar</button>
   <p id="resultado"></p>
+  <p id="copiedMessage">Frase copiada para o clipboard!</p>
 
   <script src="popup.js"></script>
 </body>
